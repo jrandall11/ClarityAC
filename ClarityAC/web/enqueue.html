@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <title>Enqueue New Aircraft</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Add New Aircraft</h1>
+            <div class="container">
+                <form action="JSP/enqueueJSP.jsp" method="Post">
+                    <div class="form-group" col="md-5">
+                        <label for="TypeSelect">Type</label>
+                        <select class="form-control" name="type" id="TypeSelect">
+                            <option>CARGO</option>
+                            <option>PASSENGER</option>
+                        </select>
+                        <label for="SizeSelect">Size</label>
+                        <select class="form-control" name="size" id="SizeSelect">
+                            <option>SMALL</option>
+                            <option>LARGE</option>
+                        </select>
+                        </br>
+                        <table>
+                            <tr>
+                                <button type="submit" class="btn btn-primary">Enqueue</button>
+                                <a class="btn btn-primary" href="/ClarityAC/All" role=""button>View Queue</a>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
